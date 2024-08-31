@@ -910,9 +910,44 @@ section {
   color: #0e2442;
   content: "/";
 }
+
+.softskills {
+  display: flex;
+  gap: 50px;
+  font-size: 2rem;
+}
+
+.softskills-text {
+  font-size: 1rem;
+}
+
+.hardskills {
+  display: flex;
+  gap: 50px;
+}
+
+.hardskills-icon {
+  width: 70px; height: 70px;
+}
+
+.cv {
+
+}
+
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
+  }
+  .cv {
+    margin-bottom: 50px;
+  }
+  .hardskills {
+    display: block;
+    gap: 2px;
+  }
+  .hardskills-icon {
+    width: 40px; 
+    height: 40px;
   }
   .breadcrumbs ol {
     display: block;
@@ -920,6 +955,14 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+  .softskills {
+    display: block;
+    font-size: 0.7rem;
+  }
+  .softskills-text {
+    font-size: 0.8rem;
+  }
+  
 }
 
 /*--------------------------------------------------------------
