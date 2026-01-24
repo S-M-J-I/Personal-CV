@@ -1,24 +1,33 @@
-// Add smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+const app = document.getElementById('app');
+const viewSlider = document.querySelector('.view-slider');
+const toAcademicBtn = document.getElementById('to-academic');
+const toProfessionalBtn = document.getElementById('to-professional');
+
+// State
+let currentView = 'professional'; // 'professional' or 'academic'
+
+// Functions
+function switchToAcademic() {
+    viewSlider.style.transform = 'translateX(-50%)'; // Slide to show right half (Academic)
+    currentView = 'academic';
+}
+
+function switchToProfessional() {
+    viewSlider.style.transform = 'translateX(0)'; // Slide to show left half (Professional)
+    currentView = 'professional';
+}
+
+// Event Listeners
+if (toAcademicBtn) {
+    toAcademicBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        switchToAcademic();
     });
-});
+}
 
-// Add animation for skill tags
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+if (toProfessionalBtn) {
+    toProfessionalBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        switchToProfessional();
     });
-}, {
-    threshold: 0.5
-});
-
-document.querySelectorAll('.skill-tag').forEach((tag) => {
-    observer.observe(tag);
-}); 
+}
