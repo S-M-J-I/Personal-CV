@@ -195,6 +195,7 @@ header p {
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap; /* Ensure wrapping on all screens if needed */
 }
 
 /* Modern Download Buttons/Links */
@@ -288,6 +289,32 @@ p {
     max-width: 750px;
 }
 
+/* Job Description Lists */
+ul.job-description {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+ul.job-description li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    opacity: 0.9;
+    max-width: 750px;
+}
+
+ul.job-description li::before {
+    content: "•"; /* Custom bullet */
+    position: absolute;
+    left: 4px;
+    color: inherit;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
 .skills-category {
     margin-bottom: 30px;
 }
@@ -337,7 +364,20 @@ p {
     }
     
     header h1 {
-        font-size: 2.75rem;
+        font-size: 2.5rem; /* Slightly smaller for mobile */
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+    
+    .header-links {
+        flex-wrap: wrap; /* Allow links to wrap */
+        gap: 15px; /* Smaller gap */
+    }
+
+    .btn-link {
+        font-size: 0.9rem; /* Adjust font size */
     }
     
     .view-slider {
@@ -348,6 +388,35 @@ p {
         top: 25px;
         right: 5%;
         padding: 8px 18px;
+        font-size: 0.85rem;
+    }
+
+    .item-header {
+        flex-direction: column; /* Stack item header on very small screens if needed */
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .item-header a {
+        align-self: flex-start; /* Align icon to left when stacked */
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .view {
+        padding: 80px 5% 40px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-links {
+        gap: 12px;
+    }
+    
+    .btn-link {
         font-size: 0.85rem;
     }
 }
