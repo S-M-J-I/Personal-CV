@@ -1,425 +1,720 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S M Jishanul Islam - Portfolio</title>
+    <title>S M Jishanul Islam | Grad Student Portfolio</title>
+    <meta name="description" content="Portfolio of S M Jishanul Islam - Part-time Faculty & AI Researcher focusing on Multimodal Deep Learning, representation, and AI systems.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Devicon & FontAwesome -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div id="app">
-        <div class="view-slider">
+    <!-- Theme Toggle Button (Sticky/Floating) -->
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle light/dark theme">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </button>
 
-            <!-- PROFESSIONAL VIEW (LEFT) -->
-            <div class="view professional-view">
-                <nav>
-                    <button id="to-academic" class="nav-toggle">Academic &rarr;</button>
-                </nav>
+    <div id="app" class="portfolio-container">
+        <!-- SIDEBAR (Profile & Navigation) -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="profile-img-container">
+                    <img src="assets/dp.jpeg" alt="S M Jishanul Islam" class="profile-img">
+                </div>
+                <div class="profile-img-caption">In Lauterbrunnen, Switzerland after winning the Gold (Champion) at IBCOL'23 (Nov, 2023)</div>
+                
+                <h1 class="profile-name">S M Jishanul Islam</h1>
+                <p class="profile-title">Part-time Faculty & AI Researcher</p>
+                <p class="profile-affiliation">
+                    <i class="fas fa-university"></i> United International University
+                </p>
+                <p class="profile-location">
+                    <i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh
+                </p>
 
-                <header>
-                    <h1>S M Jishanul Islam</h1>
-                    <h2>AI Engineer & Software Developer</h2>
-                    <p>Building scalable AI systems and multimodal applications. Currently optimizing LLMs and inference
-                        pipelines at pipikwan pêhtâkwan.</p>
-                    <div class="header-links">
-                        <a href="mailto:jishanlion@gmail.com" class="btn-link"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://github.com/S-M-J-I" target="_blank" class="btn-link"><i
-                                class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.linkedin.com/in/s-m-jishanul-islam-709b0b1a7/" target="_blank"
-                            class="btn-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="./assets/cvs/0_S M Jishanul Islam_SWE_tailored_Resume.pdf" download
-                            class="btn-link btn-pill">Resume <i class="fas fa-download"></i></a>
-                    </div>
-                </header>
+                <div class="social-links">
+                    <a href="mailto:jishanlion@gmail.com" title="Email" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/S-M-J-I" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/s-m-jishanul-islam-709b0b1a7/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=34HpSOsAAAAJ" title="Google Scholar" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/0009-0009-0247-4174" title="ORCID" target="_blank"><i class="fab fa-orcid"></i></a>
+                    <a href="https://huggingface.co/smji" title="Hugging Face" target="_blank"><span class="hf-icon">🤗</span></a>
+                </div>
 
-                <main>
-                    <section>
-                        <h3 class="section-title">Active Work</h3>
-
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>AI Engineer</h3>
-                                <span class="tag current">Current</span>
-                            </div>
-                            <div class="item-subheader">pipikwan pêhtâkwan | Edmonton, Canada | 09/2025 - Present
-                            </div>
-                            <ul class="job-description">
-                                <li>Building LLMs tailored for Indigenous Communities</li>
-                                <li>Building high-performance inference pipelines</li>
-                                <li>Integrating AI pipelines with sub-products for Indigenous Peoples</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>Software Engineer</h3>
-                            </div>
-                            <div class="item-subheader">Apurba Technologies Ltd | Dhaka, Bangladesh | 12/2024 - 09/2025
-                            </div>
-                            <ul class="job-description">
-                                <li>Core ML team for national Bengali OCR</li>
-                                <li>Optimizing RESTful APIs and achieving >95% accuracy on word-level OCR models</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title">Selected Projects</h3>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>NurtureAid</h3>
-                                <a href="https://github.com/sadia-ahmmed/AgeWell-Frontend" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>Real-time AI-based caretaking mobile app. Led the app's backend and frontend development
-                                as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> React Native, Node.js, Flask, MongoDB, Firebase,
-                                LLaMA-Index.</p>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>HAVEN</h3>
-                                <a href="https://github.com/S-M-J-I/Haven-Harvard-Hsil-Hackathon-2025" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>BCI-powered mental health speech-to-speech conversational agent. Led the app's backend,
-                                frontend, and AI development as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> Python, OpenAI, Emotiv, Firebase, Streamlit.</p>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>IPBlocks</h3>
-                                <a href="https://github.com/S-M-J-I/ipblocks-client" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>Web3 dApp for Intellectual Property protection. Led the app's backend, frontend, and
-                                blockchain development as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> HTML, CSS, JS, Supabase, Metamask, Solidity, Hyperledger
-                                Fabric.</p>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>Quest Aid</h3>
-                                <a href="https://github.com/sadia-ahmmed/quest-aid" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>AI-driven web application to manage ECAs. Led the app's backend, frontend, and AI
-                                development as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> React.js, Spring Boot, Flask, MySQL, Langchain.</p>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>iamspecial.com</h3>
-                                <a href="https://github.com/S-M-J-I/iamSpecial-dbms-project" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>Web app for accessibility and guidance for people with special needs. Led the app's
-                                backend and frontend development as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL.</p>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="item-header">
-                                <h3>ECMS-Desktop</h3>
-                                <a href="https://github.com/S-M-J-I/ECMS-Desktop" target="_blank"
-                                    style="color: inherit;"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p>ECA Management System desktop application. Led the app's backend and frontend development
-                                as a full-stack engineer.</p>
-                            <p><strong>Tech Stack:</strong> Java, JavaFX, MySQL.</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title">Professional Skills</h3>
-
-                        <div class="skills-category">
-                            <h4>Languages</h4>
-                            <div class="skills-container">
-                                <span class="skill-tag"><i class="devicon-c-plain"></i> C</span>
-                                <span class="skill-tag"><i class="devicon-cplusplus-plain"></i> C++</span>
-                                <span class="skill-tag"><i class="devicon-java-plain"></i> Java</span>
-                                <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
-                                <span class="skill-tag"><i class="devicon-php-plain"></i> PHP</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h4>Development</h4>
-                            <div class="skills-container">
-                                <span class="skill-tag"><i class="devicon-html5-plain"></i> HTML5</span>
-                                <span class="skill-tag"><i class="devicon-css3-plain"></i> CSS3</span>
-                                <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                                <span class="skill-tag"><i class="devicon-react-original"></i> React</span>
-                                <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
-                                <span class="skill-tag"><i class="devicon-spring-plain"></i> Spring</span>
-                                <span class="skill-tag"><i class="devicon-fastapi-plain"></i> FastAPI</span>
-                                <span class="skill-tag"><i class="devicon-solidity-plain"></i> Solidity</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h4>Databases</h4>
-                            <div class="skills-container">
-                                <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
-                                <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
-                                <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h4>Machine Learning & Research</h4>
-                            <div class="skills-container">
-                                <span class="skill-tag"><i class="devicon-pytorch-plain"></i> PyTorch</span>
-                                <span class="skill-tag"><i class="devicon-tensorflow-original"></i> TensorFlow</span>
-                                <span class="skill-tag"><i class="devicon-scikitlearn-plain"></i> Scikit-learn</span>
-                                <span class="skill-tag"><i class="devicon-opencv-plain"></i> OpenCV</span>
-                                <span class="skill-tag"><i class="devicon-latex-original"></i> LaTeX</span>
-                                <span class="skill-tag">🤗 HuggingFace</span>
-                            </div>
-                        </div>
-
-                        <div class="skills-category">
-                            <h4>DevOps</h4>
-                            <div class="skills-container">
-                                <span class="skill-tag"><i class="devicon-bash-plain"></i> Bash</span>
-                                <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
-                                <span class="skill-tag"><i class="devicon-docker-plain"></i> Docker</span>
-                            </div>
-                        </div>
-                    </section>
-                </main>
+                <div class="cv-download-container">
+                    <a href="./assets/cvs/CV_S_M_Jishanul_Islam.pdf" download class="btn btn-primary btn-cv">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
             </div>
 
-            <!-- ACADEMIC VIEW (RIGHT) -->
-            <div class="view academic-view">
-                <nav>
-                    <button id="to-professional" class="nav-toggle">&larr; Professional</button>
-                </nav>
+            <!-- Scrollspy Navigation -->
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><i class="fas fa-user"></i> About Me</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="#publications" class="nav-link"><i class="fas fa-book"></i> Publications</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#news" class="nav-link"><i class="fas fa-newspaper"></i> Recent News</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i> Achievements</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="#extracurriculars" class="nav-link"><i class="fas fa-users"></i> Activities</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-                <header>
-                    <h1>S M Jishanul Islam</h1>
-                    <h2>Researcher & Faculty</h2>
-                    <p>Exploring Multimodal Deep Learning and AI Safety. Part-Time Faculty Member at United International University and contributor to various
-                        high-impact research publications.</p>
-                    <div class="header-links">
-                        <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=34HpSOsAAAAJ"
-                            target="_blank" class="btn-link"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                        <a href="https://orcid.org/0009-0009-0247-4174" target="_blank" class="btn-link"><i
-                                class="fab fa-orcid"></i> ORCID</a>
-                        <a href="https://huggingface.co/smji" target="_blank" class="btn-link">Hugging Face</a>
-                        <a href="./assets/cvs/0_S M Jishanul Islam_CV_General.pdf" download class="btn-link btn-pill">CV
-                            <i class="fas fa-download"></i></a>
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <!-- ABOUT -->
+            <section id="about" class="content-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="bio-card">
+                    <p class="bio-text">
+                        I am an AI Researcher and Part-time Faculty member in the Department of Computer Science & Engineering at <strong>United International University (UIU)</strong>. Previously, I worked as a Software Engineer in the core Machine Learning team at <strong>Apurba Technologies Ltd.</strong>, where I focused on building scalable ML services and VLM-based OCR systems.
+                    </p>
+                    <p class="bio-text">
+                        My primary research interests lie at the intersection of <strong>Multi-modal Learning</strong> and <strong>Multimodal AI Safety</strong>. Specifically, I am interested in:
+                    </p>
+                    <ul class="interests-list">
+                        <li><i class="fas fa-brain"></i> <strong>Multi-modal Representation Learning</strong>: Aligning representations across vision, text, and audio.</li>
+                        <li><i class="fas fa-eye"></i> <strong>Multi-modal AI Safety & Alignment</strong>: Evaluating and defending against adversarial threats on video/multimodal media.</li>
+                        <li><i class="fas fa-keyboard"></i> <strong>VLM-based Document Processing</strong>: Developing advanced architectures for Bengali Optical Character Recognition and low-resource LLM pipelines.</li>
+                    </ul>
+                    <p class="bio-text contact-notice">
+                        <i class="fas fa-info-circle"></i> <strong>Note:</strong> You can also trigger my printer-friendly CV instantly by pressing <kbd>Ctrl</kbd> + <kbd>P</kbd> or <kbd>Cmd</kbd> + <kbd>P</kbd> anywhere on this site.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section id="education" class="content-section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-info">
+                            <h3>B.Sc. in Computer Science and Engineering</h3>
+                            <span class="institution">United International University, Dhaka, Bangladesh</span>
+                        </div>
+                        <span class="education-date">2020 — 2024</span>
                     </div>
-                </header>
+                    <div class="education-details">
+                        <p class="education-gpa">
+                            <strong>CGPA:</strong> 3.77/4.00 (Distinction: <span class="badge badge-distinction">Cum Laude</span>) | <strong>Major CGPA:</strong> 4.00/4.00 (Data Science)
+                        </p>
+                        <p class="education-thesis">
+                            <strong>Thesis:</strong> <em>AVLoS: Audio-Visual Long Text Scene Summarization</em>
+                        </p>
+                        <p class="education-advisor">
+                            <strong>Supervisor:</strong> Prof. Dr. Swakkhar Shatabda
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-                <main>
-                    <section>
-                        <h3 class="section-title">Academic Positions</h3>
+            <!-- PUBLICATIONS -->
+            <section id="publications" class="content-section">
+                <h2 class="section-title">Publications</h2>
+                
+                <div class="publications-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journal">Journals</button>
+                    <button class="filter-btn" data-filter="conference">Conferences</button>
+                    <button class="filter-btn" data-filter="workshop">Workshops</button>
+                </div>
 
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>Part-Time Faculty</h3>
-                                <span class="tag current">Current</span>
-                            </div>
-                            <div class="item-subheader">United International University | 10/2025 - Present</div>
-                            <ul class="job-description">
-                                <li>Taking core applied CS courses as a faculty from the industry</li>
-                                <li>Focusing on algorithms and software engineering</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>Lecturer (Contractual)</h3>
-                            </div>
-                            <div class="item-subheader">United International University | 06/2024 - 10/2024</div>
-                            <ul class="job-description">
-                                <li>Taught CS concepts, OOP Lab, Data Structures, and DBMS</li>
-                                <li>Audited marks for BAETE accreditation</li>
-                            </ul>
-                        </div>
-
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>Undergraduate Assistant</h3>
-                            </div>
-                            <div class="item-subheader">United International University | 09/2023 - 05/2024</div>
-                            <ul class="job-description">
-                                <li>Created course materials for Data Science degree</li>
-                                <li>Supervised labs</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title">Education</h3>
-                        <div class="experience-item">
-                            <div class="item-header">
-                                <h3>B.Sc in Computer Science & Engineering</h3>
-                            </div>
-                            <div class="item-subheader">United International University | 2020 - 2024</div>
-                            <p>Major: Data Science. Distinction: Cum Laude.<br>Thesis: AVLoS: Audio-Visual Long Text
-                                Scene Summarization.</p>
-                        </div>
-                    </section>
-
-
-                    <section>
-                        <h3 class="section-title">Publications</h3>
-                        <div style="font-size: 0.9em; opacity: 0.8; margin-bottom: 20px;">
-                            (* Equal Contribution)
-                        </div>
-
-                        <!-- 2026 -->
-                        <div class="publication-item">
-                            <p><strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Musfirat Hossain, Mysun
-                                Mashira, Nur Islam Shourav, MD. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, and
-                                A.K.M. Muzahidul Islam. 2026. An audio video-based multi-modal fusion approach for
-                                speech emotion recognition. Accepted at <em>Knowledge-Based Systems
-                                    (Elsevier) [Q1; Impact Factor 7.6; CiteScore 15]</em>.</p>
-                        </div>
-                        
-                        <div class="publication-item">
-                            <p><strong>S M Jishanul Islam</strong>, Md. Mehedi Hasan, Masbul Haider Ovi, AKM Shahariar
-                                Azad Rabby, and Fuad Rahman. 2026. <strong>BornoDrishti: Leveraging Vision Encoders and
-                                    Domain-Adaptive Learning for Bangla OCR on Diverse Documents</strong>. In the 19th
-                                Conference of the European Chapter of the Association for Computational Linguistics
-                                (EACL). <em>ACL</em>.</p>
-                        </div>
-
-                        <!-- 2025 -->
-                        <div class="publication-item">
-                            <p>Md. Mehedi Hasan, <strong>S M Jishanul Islam</strong>, AKM Shahariar Azad Rabby, and Fuad
-                                Rahman. 2025. <strong>Beyond Characters: Position-Aware Metric and a Lightweight LLM for
-                                    Low-Resource Bangla Punctuation Restoration</strong>. <em>IEEE BigData 2025</em>.
+                <div class="publications-list">
+                    <!-- Journals -->
+                    <div class="pub-item" data-category="journal">
+                        <div class="pub-badge">Journal</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">An audio video-based multi-modal fusion approach for speech emotion recognition</h3>
+                            <p class="pub-authors">
+                                <strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Musfirat Hossain, Mysun Mashira, Nur Islam Shourav, MD. Rayhan Ahmed, Salekul Islam, Swakkhar Shatabda, and A.K.M. Muzahidul Islam.
                             </p>
-                        </div>
-
-                        <div class="publication-item">
-                            <p>Sadia Ahmmed, <strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Ridwan Arefin
-                                Islam, Subangkar Karmaker Shanto, and Salekul Islam. 2025. <strong>IPBlocks: A
-                                    Blockchain Ecosystem for Secure IP Registration and Decentralized
-                                    Marketplace</strong>. <em>IEEE TENCON 2025</em>.</p>
-                        </div>
-
-                        <div class="publication-item">
-                            <p>Sahid Hossain Mustakim*, <strong>S M Jishanul Islam*</strong>, Ummay Maria Muna*, Montasir
-                                Chowdhury*, Mohammed Jawwadul Islam, Sadia Ahmmed, Tashfia Sikder, Syed Tasdid Azam
-                                Dhrubo, and Swakkhar Shatabda. 2025. <strong>Watch, Listen, Understand, Mislead:
-                                    Tri-modal Adversarial Attacks on Short Videos for Content Appropriateness
-                                    Evaluation</strong>. <em>Proceedings of the IEEE/CVF International Conference on
-                                    Computer Vision (ICCV) Workshops</em>, pp. 2955-2964.</p>
-                        </div>
-
-                        <!-- 2024 -->
-
-                        <div class="publication-item">
-                            <p><strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Sadia Ahmmed, Md. Faiyaz
-                                Abdullah Sayeedi, Swapnil Khandoker, Syed Tasdid Azam Dhrubo, and Nahid Hossain. 2024.
-                                <strong>MIMIC: Multimodal Islamophobic Meme Identification and Classification</strong>.
-                                3rd Muslims in ML Workshop - <em>NeurIPS 2024</em>.</p>
-                        </div>
-
-                        <div class="publication-item">
-                            <p>Sadia Ahmmed, Taimur Rahman, <strong>S M Jishanul Islam</strong>, Al-Momen Reyad, Sonjoy
-                                Dey, James Anthony Purification, and Md. Dewan Farid. 2024. <strong>E-MedViTR - Enhanced
-                                    Vision Transformers with Registers for Biomedical Image Classification</strong>. 6th
-                                International Conference on Electrical Engineering and Information & Communication
-                                Technology (<em>ICEEICT 2024</em>).</p>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h3 class="section-title">Notable Research Projects</h3>
-                        
-                        <div class="research-item">
-                            <div class="item-header">
-                                <h3>wâsikan kisewâtisiwin</h3>
+                            <p class="pub-venue">
+                                <em>Knowledge-Based Systems (Elsevier)</em>, 2026.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-success">Elsevier Q1</span>
+                                <span class="badge badge-info">Impact Factor: 7.6</span>
+                                <span class="badge badge-info">CiteScore: 15</span>
                             </div>
-                            <div class="item-subheader">AI Engineer, pipikwan pêhtâkwan | Ongoing</div>
-                            <p>Developing AI solutions for indigenous language preservation and revitalization.</p>
                         </div>
+                    </div>
 
-                        <div class="research-item">
-                            <div class="item-header">
-                                <h3>Bangla Optical Character Recognition (OCR) Project</h3>
+                    <!-- Conferences -->
+                    <div class="pub-item" data-category="conference">
+                        <div class="pub-badge">Conference</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">BornoDrishti: Leveraging Vision Encoders and Domain-Adaptive Learning for Bangla OCR on Diverse Documents</h3>
+                            <p class="pub-authors">
+                                <strong>S M Jishanul Islam</strong>, Md. Mehedi Hasan, Masbul Haider Ovi, AKM Shahariar Azad Rabby, and Fuad Rahman.
+                            </p>
+                            <p class="pub-venue">
+                                <em>In the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL) Industry Track</em>. ACL, 2026.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-primary">EACL 2026</span>
+                                <span class="badge badge-secondary">ACL Archive</span>
                             </div>
-                            <div class="item-subheader">Software Engineer, Apurba Technologies Ltd</div>
-                            <p>Worked on a new Vision-Language-based architecture for Bengali OCR and document reconstruction. Fine-tuned VLMs to improve OCR for Bengali, and worked on punctuation and document structure restoration.</p>
                         </div>
-                    </section>
+                    </div>
 
+                    <div class="pub-item" data-category="conference">
+                        <div class="pub-badge">Conference</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Beyond Characters: Position-Aware Metric and a Lightweight LLM for Low-Resource Bangla Punctuation Restoration</h3>
+                            <p class="pub-authors">
+                                Md. Mehedi Hasan, <strong>S M Jishanul Islam</strong>, AKM Shahariar Azad Rabby, and Fuad Rahman.
+                            </p>
+                            <p class="pub-venue">
+                                <em>In 2025 IEEE International Conference on Big Data (BigData)</em>. IEEE, 2025.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-primary">IEEE BigData 2025</span>
+                            </div>
+                        </div>
+                    </div>
 
-                    <section>
-                        <h3 class="section-title">Achievements</h3>
+                    <div class="pub-item" data-category="conference">
+                        <div class="pub-badge">Conference</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">IPBlocks: A Blockchain Ecosystem for Secure IP Registration and Decentralized Marketplace</h3>
+                            <p class="pub-authors">
+                                Sadia Ahmmed, <strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Ridwan Arefin Islam, Subangkar Karmaker Shanto, and Salekul Islam.
+                            </p>
+                            <p class="pub-venue">
+                                <em>In TENCON 2025 - 2025 IEEE Region 10 Conference (TENCON)</em>. IEEE, 2025.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-primary">IEEE TENCON 2025</span>
+                            </div>
+                        </div>
+                    </div>
 
-                        <div class="achievement-item">
-                            <p><strong>Best Performing Engineer</strong>, Project SD-12 awarded by Apurba Technologies
-                                Ltd (Oct 2025)</p>
+                    <div class="pub-item" data-category="conference">
+                        <div class="pub-badge">Conference</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">E-MedViTR: Enhanced Vision Transformers with Registers for Biomedical Image Classification</h3>
+                            <p class="pub-authors">
+                                Sadia Ahmmed, Taimur Rahman, <strong>S M Jishanul Islam</strong>, Al-Momen Reyad, Sonjoy Dey, and Md. Dewan Farid.
+                            </p>
+                            <p class="pub-venue">
+                                <em>In 2024 6th International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT)</em>, pp. 664-669. IEEE, 2024.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-primary">ICEEICT 2024</span>
+                            </div>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Winner</strong>, Harvard Health Systems Innovation Lab Hackathon 2025 Dhaka Hub
-                                (Apr 2025)</p>
+                    </div>
+
+                    <!-- Workshops -->
+                    <div class="pub-item" data-category="workshop">
+                        <div class="pub-badge">Workshop</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">Watch, Listen, Understand, Mislead: Tri-modal Adversarial Attacks on Short Videos for Content Appropriateness Evaluation</h3>
+                            <p class="pub-authors">
+                                Sahid Hossain Mustakim*, <strong>S M Jishanul Islam*</strong>, Ummay Maria Muna*, Montasir Chowdhury*, Mohammed Jawwadul Islam, Sadia Ahmmed, Tashfia Sikder, Syed Tasdid Azam Dhrubo, and Swakkhar Shatabda.
+                            </p>
+                            <p class="pub-venue">
+                                <em>Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops</em>, pp. 2955-2964, 2025.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-warning">ICCV 2025 Workshop</span>
+                                <span class="badge badge-light">* Equal Contribution</span>
+                            </div>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Academic Excellence Scholarship</strong> (2020-2024)</p>
+                    </div>
+
+                    <div class="pub-item" data-category="workshop">
+                        <div class="pub-badge">Workshop</div>
+                        <div class="pub-content">
+                            <h3 class="pub-title">MIMIC: Multimodal Islamophobic Meme Identification and Classification</h3>
+                            <p class="pub-authors">
+                                <strong>S M Jishanul Islam</strong>, Sahid Hossain Mustakim, Sadia Ahmmed, Md. Faiyaz Abdullah Sayeedi, Swapnil Khandoker, Syed Tasdid Azam Dhrubo, and Nahid Hossain.
+                            </p>
+                            <p class="pub-venue">
+                                <em>3rd Muslims in ML Workshop – NeurIPS</em>, 2024.
+                            </p>
+                            <div class="pub-tags">
+                                <span class="badge badge-warning">NeurIPS 2024 Workshop</span>
+                            </div>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Champion</strong>, Bhashamul: Bengali Regional Text to IPA National NLP Datathon
-                                (Mar 2024)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience" class="content-section">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Oct 2025 — Present</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Part-time Faculty</h3>
+                                <span class="org-name">United International University</span>
+                            </div>
+                            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            <ul class="details-list">
+                                <li>Teaching core applied computer science courses, focusing on algorithms and software engineering.</li>
+                                <li>Collaborating with the department of CSE to grade, provide constructive feedback, evaluate student performances, and provide industry insights to enrich course outlines.</li>
+                                <li>Coordinating with Teaching Assistants (TAs) to create unified course materials and lab outlines.</li>
+                            </ul>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Champion</strong>, Hult Prize OnCampus Round (Mar 2024)</p>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2024 — Oct 2025</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Software Engineer</h3>
+                                <span class="org-name">Apurba Technologies Ltd.</span>
+                            </div>
+                            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            <ul class="details-list">
+                                <li>Engineered scalable, robust, and optimized core ML inference services, resulting in a 10% performance speedup.</li>
+                                <li>Co-created the first CLIP-style word recognizer for VLM-based Bengali OCR, achieving a word-level accuracy of 95%+.</li>
+                                <li>Collaborated within a cross-functional ML research team to complete, document, and present critical project deliverables 2-3 weeks ahead of scheduled deadlines.</li>
+                            </ul>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Top 15 Finalist</strong>, Hult Prize Summit in Boston, USA (Jun 2024)</p>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jun 2024 — Oct 2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Lecturer (Contractual)</h3>
+                                <span class="org-name">United International University</span>
+                            </div>
+                            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            <ul class="details-list">
+                                <li>Delivered lectures and conducted laboratory sessions for core Computer Science courses.</li>
+                                <li>Designed and graded examinations, assignments, and projects to evaluate performance and provide feedback, improving students' average lab performance by 7%.</li>
+                                <li><strong>Courses Conducted:</strong> Object-Oriented Programming Lab, Data Structures and Algorithms 1 Lab, and Database Management Systems Theory.</li>
+                            </ul>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Finalist</strong>, ICT Innovation Grant (for NurtureAid) (Dec 2023)</p>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Sep 2023 — May 2024</div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="role-title">Undergraduate Assistant</h3>
+                                <span class="org-name">United International University</span>
+                            </div>
+                            <span class="location-tag"><i class="fas fa-map-marker-alt"></i> Dhaka, Bangladesh</span>
+                            <ul class="details-list">
+                                <li>Facilitated course content delivery and prepared hands-on laboratory exercises in coordination with department faculties.</li>
+                                <li>Evaluated assessments, supervised weekly lab submissions, and served as a panel judge for student projects.</li>
+                                <li>Authored and structured the country's first-ever undergraduate course materials for the newly introduced Data Science program.</li>
+                                <li><strong>Courses Supervised:</strong> Programming for Data Science, and Object-Oriented Programming for Data Science.</li>
+                            </ul>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Gold Award (Champion)</strong>, International Blockchain Olympiad IBCOL 2023 (Nov
-                                2023)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RECENT NEWS -->
+            <section id="news" class="content-section">
+                <h2 class="section-title">Recent News</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <div class="news-date">Mar 2026</div>
+                        <div class="news-content">
+                            <p>📚 Our journal paper <strong>"An audio video-based multi-modal fusion approach for speech emotion recognition"</strong> has been accepted for publication in <strong>Knowledge-Based Systems (Elsevier)</strong>! (Q1 Journal, Impact Factor: 7.6).</p>
+                            </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Jan 2026</div>
+                        <div class="news-content">
+                            <p>🎉 Our paper <strong>"BornoDrishti: Leveraging Vision Encoders and Domain-Adaptive Learning for Bangla OCR on Diverse Documents"</strong> has been accepted at the <strong>19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)</strong> Industry Track!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Champion</strong>, Software Engineering Lab (Sep 2023)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Nov 2025</div>
+                        <div class="news-content">
+                            <p>🚀 Our paper on Bangla punctuation restoration <strong>"Beyond Characters: Position-Aware Metric and a Lightweight LLM for Low-Resource Bangla Punctuation Restoration"</strong> has been accepted at <strong>IEEE BigData 2025</strong>!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Silver Award (1st Runner Up)</strong>, Bangladesh Blockchain Olympiad BCOLBD 2023
-                                (Jul 2023)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Oct 2025</div>
+                        <div class="news-content">
+                            <p>💼 Pleased to announce that I have joined <strong>United International University (UIU)</strong> as a Part-time Faculty member, teaching core Computer Science and Software Engineering courses!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>1st Runner Up</strong>, Intra-University Deep Learning Sprint (Jan 2023)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Oct 2025</div>
+                        <div class="news-content">
+                            <p>🏆 Honored to receive the <strong>"Best Performing Engineer"</strong> award for Project SD-12 from the leadership team at Apurba Technologies Ltd.</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Champion</strong>, Database Management Systems Lab (May 2022)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Apr 2025</div>
+                        <div class="news-content">
+                            <p>🥇 We won the <strong>Harvard Health Systems Innovation Lab Hackathon 2025 (Dhaka Hub)</strong> for our project HAVEN, a BCI-powered speech-to-speech emotional agent!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Champion</strong>, Advanced Object Oriented Programming Lab (Jan 2022)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Nov 2024</div>
+                        <div class="news-content">
+                            <p>🔥 Our paper <strong>"MIMIC: Multimodal Islamophobic Meme Identification and Classification"</strong> was accepted and presented at the 3rd Muslims in ML Workshop at <strong>NeurIPS 2024</strong> in Vancouver, Canada!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>The Daily Star Award</strong> (2017)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Jun 2024</div>
+                        <div class="news-content">
+                            <p>✈️ Travelled to Boston, USA to participate as a global finalist in the <strong>Hult Prize Summit 2024</strong> representing UIU!</p>
                         </div>
-                        <div class="achievement-item">
-                            <p><strong>Academia High Achievers Award</strong> (2017)</p>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Mar 2024</div>
+                        <div class="news-content">
+                            <p>🏆 Won <strong>Champion</strong> at the <strong>Bhashamul: Bengali Regional Text to IPA National NLP Datathon</strong>! Our team solved Bengali regional IPA transcription.</p>
                         </div>
-                    </section>
-                </main>
-            </div>
-        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <div class="news-date">Nov 2023</div>
+                        <div class="news-content">
+                            <p>🌍 Travelled to Switzerland and won the prestigious <strong>Gold Award (World Champion)</strong> at the <strong>International Blockchain Olympiad (IBCOL 2023)</strong> in Lauterbrunnen!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="content-section">
+                <h2 class="section-title">Projects</h2>
+                
+                <!-- Research Projects -->
+                <h3 class="subsection-title"><i class="fas fa-flask"></i> Research Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h4>Bangla OCR (BornoDrishti)</h4>
+                            <a href="https://ocr.bangla.gov.bd/" target="_blank" class="project-external-link" title="Project Link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                        <p class="project-desc">A novel Vision-Language model (VLM) framework and domain-adaptive learning strategy for optical character recognition of diverse, complex Bengali documents. Associated with Apurba Technologies Ltd.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>VLMs</span>
+                            <span>Transformers</span>
+                            <span>Domain Adaptation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ocr.bangla.gov.bd/" target="_blank" class="btn btn-outline btn-xs"><i class="fas fa-globe"></i> Portal</a>
+                            <a href="https://kagoj.ai/" target="_blank" class="btn btn-outline btn-xs"><i class="fas fa-comments"></i> Kagoj AI</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h4>BhaShammo</h4>
+                            <a href="https://github.com/S-M-J-I/bhashammo-dgt-regional-bengail-2-ipa" target="_blank" class="project-external-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="project-desc">Solving regional IPA transcription in Bangla using Dialect Guided Tokens (DGT). Won 1st place in the Bhashamul National NLP Datathon.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>HuggingFace</span>
+                            <span>PyTorch</span>
+                            <span>Speech-to-IPA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/S-M-J-I/bhashammo-dgt-regional-bengail-2-ipa" target="_blank" class="btn btn-outline btn-xs"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dev Projects -->
+                <h3 class="subsection-title" style="margin-top: 40px;"><i class="fas fa-laptop-code"></i> Engineering & Hackathon Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h4>NurtureAid</h4>
+                            <a href="https://github.com/sadia-ahmmed/AgeWell-Frontend" target="_blank" class="project-external-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="project-desc">Real-time AI-based caretaking mobile app simplifying aged care through caretakers. Full-stack development including backend and AI engine.</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Node.js</span>
+                            <span>Flask</span>
+                            <span>MongoDB</span>
+                            <span>Firebase</span>
+                            <span>LLaMA-Index</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sadia-ahmmed/AgeWell-Frontend" target="_blank" class="btn btn-outline btn-xs"><i class="fab fa-github"></i> Client</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h4>HAVEN</h4>
+                            <a href="https://github.com/S-M-J-I/Haven-Harvard-Hsil-Hackathon-2025" target="_blank" class="project-external-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="project-desc">Brain-Computer Interface (BCI) powered mental health speech-to-speech conversational agent recognizing and responding with emotions. Won Harvard HSIL Hackathon Dhaka Hub.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>Emotiv EEG</span>
+                            <span>Firebase</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/S-M-J-I/Haven-Harvard-Hsil-Hackathon-2025" target="_blank" class="btn btn-outline btn-xs"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <h4>IPBlocks</h4>
+                            <a href="https://github.com/S-M-J-I/ipblocks-blockchain" target="_blank" class="project-external-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="project-desc">Web3 decentralized app for Intellectual Property protection, licensing, and marketplace. Led backend, frontend, and smart contract development. Won Gold at IBCOL 2023.</p>
+                        <div class="project-tech">
+                            <span>HTML/JS</span>
+                            <span>PHP</span>
+                            <span>PostgreSQL</span>
+                            <span>Solidity</span>
+                            <span>Truffle</span>
+                            <span>Ganache</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/S-M-J-I/ipblocks-blockchain" target="_blank" class="btn btn-outline btn-xs"><i class="fab fa-github"></i> Blockchain</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ACHIEVEMENTS -->
+            <section id="achievements" class="content-section">
+                <h2 class="section-title">Achievements & Awards</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card highlight">
+                        <div class="achievement-icon"><i class="fas fa-globe-americas"></i></div>
+                        <div class="achievement-content">
+                            <h4>Gold Award (World Champion)</h4>
+                            <p class="achievement-org">International Blockchain Olympiad (IBCOL 2023)</p>
+                            <span class="achievement-year">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="achievement-content">
+                            <h4>Winner (Dhaka Hub)</h4>
+                            <p class="achievement-org">Harvard Health Systems Innovation Lab Hackathon</p>
+                            <span class="achievement-year">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                        <div class="achievement-content">
+                            <h4>Best Performing Engineer</h4>
+                            <p class="achievement-org">Project SD-12, Apurba Technologies Ltd.</p>
+                            <span class="achievement-year">Oct 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="achievement-content">
+                            <h4>National Champion</h4>
+                            <p class="achievement-org">Bhashamul: Bengali Regional Text to IPA National NLP Datathon</p>
+                            <span class="achievement-year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div class="achievement-content">
+                            <h4>Academic Excellence Scholarship</h4>
+                            <p class="achievement-org">United International University</p>
+                            <span class="achievement-year">2020 — 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-flag-usa"></i></div>
+                        <div class="achievement-content">
+                            <h4>Global Summit Participant</h4>
+                            <p class="achievement-org">Hult Prize Global Summit (Boston, USA)</p>
+                            <span class="achievement-year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="achievement-content">
+                            <h4>Champion</h4>
+                            <p class="achievement-org">Hult Prize OnCampus Round (UIU)</p>
+                            <span class="achievement-year">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div class="achievement-content">
+                            <h4>Silver Award (1st Runner Up)</h4>
+                            <p class="achievement-org">Bangladesh Blockchain Olympiad (BCOLBD 2023)</p>
+                            <span class="achievement-year">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div class="achievement-content">
+                            <h4>1st Runner Up</h4>
+                            <p class="achievement-org">Intra-University Deep Learning Sprint</p>
+                            <span class="achievement-year">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <div class="achievement-content">
+                            <h4>National Finalist</h4>
+                            <p class="achievement-org">ICT Innovation Grant (for NurtureAid)</p>
+                            <span class="achievement-year">2023</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <section id="skills" class="content-section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category-card">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="devicon-python-plain"></i> Python</span>
+                            <span class="skill-tag"><i class="devicon-cplusplus-plain"></i> C++</span>
+                            <span class="skill-tag"><i class="devicon-c-plain"></i> C</span>
+                            <span class="skill-tag"><i class="devicon-java-plain"></i> Java</span>
+                            <span class="skill-tag"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="devicon-php-plain"></i> PHP</span>
+                            <span class="skill-tag"><i class="devicon-solidity-plain"></i> Solidity</span>
+                            <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <h4>Machine Learning & Research</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="devicon-pytorch-plain"></i> PyTorch</span>
+                            <span class="skill-tag"><i class="devicon-tensorflow-original"></i> TensorFlow</span>
+                            <span class="skill-tag"><i class="devicon-scikitlearn-plain"></i> Scikit-Learn</span>
+                            <span class="skill-tag"><i class="fas fa-cube"></i> HuggingFace</span>
+                            <span class="skill-tag"><i class="fas fa-chart-line"></i> NumPy & Pandas</span>
+                            <span class="skill-tag"><i class="fas fa-language"></i> NLTK / NLP</span>
+                            <span class="skill-tag"><i class="devicon-opencv-plain"></i> OpenCV</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <h4>Frameworks & Databases</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="devicon-react-original"></i> React.js</span>
+                            <span class="skill-tag"><i class="devicon-nodejs-plain"></i> Node.js</span>
+                            <span class="skill-tag"><i class="devicon-fastapi-plain"></i> FastAPI</span>
+                            <span class="skill-tag"><i class="devicon-spring-plain"></i> Spring Boot</span>
+                            <span class="skill-tag"><i class="devicon-postgresql-plain"></i> PostgreSQL</span>
+                            <span class="skill-tag"><i class="devicon-mongodb-plain"></i> MongoDB</span>
+                            <span class="skill-tag"><i class="devicon-mysql-plain"></i> MySQL</span>
+                            <span class="skill-tag"><i class="devicon-firebase-plain"></i> Firebase</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-card">
+                        <h4>DevOps & Tools</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="devicon-git-plain"></i> Git</span>
+                            <span class="skill-tag"><i class="devicon-github-original"></i> GitHub</span>
+                            <span class="skill-tag"><i class="devicon-docker-plain"></i> Docker</span>
+                            <span class="skill-tag"><i class="fas fa-terminal"></i> Bash / Shell</span>
+                            <span class="skill-tag"><i class="fas fa-file-pdf"></i> LaTeX</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXTRA CURRICULARS & MEDIA -->
+            <section id="extracurriculars" class="content-section">
+                <h2 class="section-title">Extracurriculars & Media</h2>
+                <div class="activities-card">
+                    <ul class="activities-list">
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-users-cog"></i></div>
+                            <div class="activity-content">
+                                <strong>UIU Computer Club (UIUCC)</strong>
+                                <span class="activity-role">General Secretary (2022 — 2024)</span>
+                                <p>Led club activities, organized multiple national hackathons, managed a committee of 50+ members, and directed workshops for 1000+ students.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-tv"></i></div>
+                            <div class="activity-content">
+                                <strong>National TV Feature (Jamuna TV)</strong>
+                                <span class="activity-link-container">
+                                    <a href="https://www.youtube.com/watch?v=F0p7LpZc5t0" target="_blank" class="media-link"><i class="fab fa-youtube"></i> Watch Interview</a>
+                                </span>
+                                <p>Interviewed by Jamuna TV on our team's triumph at IBCOL 2023 in Switzerland and the potential of blockchain technology in Bangladesh.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                            <div class="activity-content">
+                                <strong>Automatic Speech Recognition (ASR) Workshop</strong>
+                                <span class="activity-role">Co-Trainer (Collaborative Event)</span>
+                                <p>Conducted a hands-on workshop on ASR models hosted by Bengali.AI and the Islamic University of Technology (IUT) Computer Society.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="activity-icon"><i class="fas fa-laptop-code"></i></div>
+                            <div class="activity-content">
+                                <strong>dApp Development Workshop</strong>
+                                <span class="activity-role">Lead Trainer</span>
+                                <p>Led a hands-on workshop on building decentralized applications (dApps) from scratch for the students of United International University.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
     </div>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 
