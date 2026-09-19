@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>S M Jishanul Islam Webpage</title>
+  <meta name="description"
+    content="S M Jishanul Islam — Computer Science master's student at Dalhousie University and AI Engineer working on multi-modal learning, representation, and understanding.">
+  <meta name="author" content="S M Jishanul Islam">
+  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="S M Jishanul Islam">
+  <meta property="og:description"
+    content="CS master's student at Dalhousie University and AI Engineer. Multi-modal learning, representation, and understanding.">
+  <meta property="og:image" content="assets/dp.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/dp.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    // Set the theme before first paint so there is no flash, and mark that
+    // JS is alive so the scroll-reveal styles only apply when they can undo.
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top">S M Jishanul Islam</a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch colour theme">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.2" />
+            <g stroke-linecap="round">
+              <path
+                d="M12 2.2v2.4M12 19.4v2.4M2.2 12h2.4M19.4 12h2.4M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7" />
+            </g>
+          </svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z" /></svg>
+        </button>
+        <button class="icon-btn nav__burger" id="navToggle" type="button" aria-label="Menu" aria-expanded="false"
+          aria-controls="mobileMenu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__sheet" id="mobileMenu" hidden>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ───────────────────────────── Hero ───────────────────────────── -->
+    <section class="hero" id="top">
+      <div class="wrap hero__inner">
+        <div class="portrait reveal">
+          <img src="assets/dp.jpeg" alt="Portrait of S M Jishanul Islam" width="467" height="472" fetchpriority="high">
+        </div>
+
+        <p class="eyebrow reveal">Halifax, Nova Scotia</p>
+        <h1 class="hero__name reveal">S M Jishanul Islam</h1>
+        <p class="hero__role reveal">Master in Computer Science student &amp; AI&nbsp;Engineer</p>
+        <p class="hero__lede reveal">
+          I work on multi-modal and hierarchical learning, teaching models to see, hear and read at the same time while
+          helping them relate to concepts —
+          and on shipping that research as systems people actually use.
+        </p>
+
+        <div class="hero__cta reveal">
+          <a class="btn btn--primary" href="mailto:jishanlion@gmail.com">Get in touch</a>
+          <a class="btn btn--ghost" href="assets/cvs/CV_S_M_Jishanul_Islam.pdf" target="_blank" rel="noopener">
+            Curriculum vitae
+            <svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" /></svg>
+          </a>
+        </div>
+
+        <div class="hero__now reveal">
+          <span class="hero__now-label">Currently</span>
+          <div class="hero__now-items">
+            <span class="now-item">
+              <span class="logo-chip logo-chip--sm"><img src="assets/logos/pipikwan-pehtakwan.png" alt=""
+                  loading="lazy"></span>
+              AI Engineer, pipikwan pêhtâkwan
+            </span>
+            <span class="now-sep" aria-hidden="true"></span>
+            <span class="now-item">
+              <span class="logo-chip logo-chip--sm"><img src="assets/logos/dalhousie.svg" alt="" loading="lazy"></span>
+              MCS, Dalhousie University
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────── About ──────────────────────────── -->
+    <section class="section section--tint" id="about">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">About</p>
+        <h2 class="section__title reveal">Research that leaves the lab.</h2>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              I am a master&rsquo;s student in Computer Science at <strong>Dalhousie University</strong>, supervised by
+              Prof. Dr. Frank Rudzicz, and an AI Engineer at <strong>pipikwan pêhtâkwan</strong>, where I train and
+              serve
+              AI built to corrects unconscious bias or racism directed to Indigenous Peoples in written materials.
+            </p>
+            <p>
+              Before Canada I did my undergraduate in Computer Science and Engineering at United International
+              University in Dhaka,
+              majoring in Data Science - a perfect 4.00 in the major, Cum Laude overall — and spent a year building
+              production OCR and vision-language systems at Apurba Technologies. I used to also teach at my Alma Mater,
+              part-time,
+              because the questions students ask are the ones worth answering.
+            </p>
+            <p>
+              My published work runs from tri-modal adversarial attacks on short video to Bangla OCR on documents
+              nobody else would touch. The through-line is the same: several signals, one understanding. During my
+              master's, I am trying to make medical AI understand hierarchy in medical ontologies and help them ACTUALLY
+              see, read, and hear.
+            </p>
+          </div>
+
+          <aside class="about__side reveal">
+            <h3 class="about__side-title">Research interests</h3>
+            <ul class="pills">
+              <li>Hierarchical Learning</li>
+              <li>Multi-modal Learning</li>
+              <li>Multi-modal Representation</li>
+              <li>Multi-modal Understanding</li>
+              <li>Multi-modal AI Applications</li>
+              <li>Medical AI</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Education ────────────────────────── -->
+    <section class="section section--tint" id="education">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Education</p>
+        <h2 class="section__title reveal">Where I learned it.</h2>
+
+        <ol class="timeline">
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/dalhousie.svg" alt="Dalhousie University logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">Master&rsquo;s in Computer Science</h3>
+                <span class="entry__dates">2026 — Present</span>
+              </div>
+              <p class="entry__org">Dalhousie University <span class="entry__loc">Halifax, Nova Scotia, Canada</span>
+              </p>
+              <p class="entry__meta">Supervisor: <a href="https://web.cs.dal.ca/~rudzicz/" target="_blank">Prof. Dr.
+                  Frank Rudzicz</a></p>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/uiu.png" alt="United International University logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">B.Sc. in Computer Science &amp; Engineering</h3>
+                <span class="entry__dates">2020 — 2024</span>
+              </div>
+              <p class="entry__org">United International University <span class="entry__loc">Dhaka, Bangladesh</span>
+              </p>
+              <p class="entry__meta">
+                Major in Data Science · Cum Laude ·
+                Supervisor: <a href="https://cse.sds.bracu.ac.bd/faculty_profile/333/dr_swakkhar_shatabda"
+                  target="_blank" rel="noopener">Prof. Dr. Swakkhar Shatabda</a>
+              </p>
+              <div class="stats">
+                <div class="stat"><span class="stat__num">3.77<span class="stat__den">/4.00</span></span><span
+                    class="stat__label">CGPA</span></div>
+                <div class="stat"><span class="stat__num">4.00<span class="stat__den">/4.00</span></span><span
+                    class="stat__label">Major CGPA</span></div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Experience ───────────────────────── -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Experience</p>
+        <h2 class="section__title reveal">Where I&rsquo;ve built things.</h2>
+
+        <ol class="timeline">
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/pipikwan-pehtakwan.png" alt="pipikwan pêhtâkwan logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">AI Engineer</h3>
+                <span class="entry__dates">Oct 2025 — Present</span>
+              </div>
+              <p class="entry__org">pipikwan pêhtâkwan <span class="entry__loc">Edmonton, Canada (remote)</span></p>
+              <ul class="entry__list">
+                <li>Trained LLMs for multi-purpose tasks serving Indigenous Peoples, reaching a state-of-the-art
+                  <strong>86% BERT F1</strong>.</li>
+                <li>Built inference pipelines for billion-parameter models at scale, cutting time-to-first-token to
+                  <strong>1 second</strong>.</li>
+                <li>Led the training of the first thinking model built to serve Indigenous Peoples.</li>
+                <li>Work alongside the software engineering team to fold LLM pipelines into AI-powered sub-products.
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/uiu.png" alt="United International University logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">Part-time Faculty</h3>
+                <span class="entry__dates">Oct 2025 — July 2026</span>
+              </div>
+              <p class="entry__org">United International University <span class="entry__loc">Dhaka, Bangladesh</span>
+              </p>
+              <ul class="entry__list">
+                <li>Teach core applied CS courses as faculty from industry, centred on algorithms and software
+                  engineering.</li>
+                <li>Work with the CSE department on grading, feedback and performance reporting, bringing industry
+                  perspective back into the courses.</li>
+                <li>Coordinate with TAs on course materials and outline design.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/apurba.jpg" alt="Apurba Technologies logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">Software Engineer</h3>
+                <span class="entry__dates">Dec 2024 — Oct 2025</span>
+              </div>
+              <p class="entry__org">Apurba Technologies Ltd. <span class="entry__loc">Dhaka, Bangladesh</span></p>
+              <ul class="entry__list">
+                <li>Built scalable, optimised core ML services, improving performance by <strong>10%</strong>.</li>
+                <li>Co-created the first CLIP-style word recogniser for VLM-based Bengali OCR, at <strong>95%+
+                    accuracy</strong>.</li>
+                <li>Worked with stakeholders to research and deliver project milestones two to three weeks ahead of
+                  deadline.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/uiu.png" alt="United International University logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">Lecturer <span class="entry__qualifier">(contractual)</span></h3>
+                <span class="entry__dates">Jun 2024 — Oct 2024</span>
+              </div>
+              <p class="entry__org">United International University <span class="entry__loc">Dhaka, Bangladesh</span>
+              </p>
+              <ul class="entry__list">
+                <li>Taught core CS concepts, raising average student performance by <strong>7%</strong> through
+                  examination and targeted feedback.</li>
+                <li>Courses: Object-Oriented Programming Lab, Data Structures &amp; Algorithms I Lab, Database
+                  Management Systems (Theory).</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="entry reveal">
+            <div class="entry__aside">
+              <span class="logo-chip"><img src="assets/logos/uiu.png" alt="United International University logo"
+                  loading="lazy"></span>
+            </div>
+            <div class="entry__body">
+              <div class="entry__head">
+                <h3 class="entry__role">Undergraduate Assistant</h3>
+                <span class="entry__dates">Sep 2023 — May 2024</span>
+              </div>
+              <p class="entry__org">United International University <span class="entry__loc">Dhaka, Bangladesh</span>
+              </p>
+              <ul class="entry__list">
+                <li>Facilitated course content with lab faculty, evaluated assessments and judged lab projects.</li>
+                <li>Wrote the first course materials for the country&rsquo;s first undergraduate degree in Data Science.
+                </li>
+                <li>Courses supervised: Programming for Data Science, Object-Oriented Programming for Data Science.</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Publications ─────────────────────── -->
+    <section class="section section--tint" id="research">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Publications</p>
+        <h2 class="section__title reveal">Answering one question.</h2>
+        <p class="section__lede reveal">How do you get a model to understand something when the evidence arrives in more
+          than one form?</p>
+
+        <h3 class="group__title reveal">Journals</h3>
+        <ol class="pubs">
+          <li class="pub reveal">
+            <div class="pub__marks">
+              <span class="tag tag--accent">Q1</span>
+              <span class="tag">IF 8.0</span>
+            </div>
+            <h4 class="pub__title">An audio video-based multi-modal fusion approach for speech emotion recognition</h4>
+            <p class="pub__authors"><em>Islam, S. M.</em>, Mustakim, S. H., Hossain, M., Mashira, M., Shourav, N. I.,
+              Ahmed, M. R., Islam, S., Islam, A. K. M., &amp; Shatabda, S.</p>
+            <p class="pub__venue">Knowledge-Based Systems (Elsevier) · 2026</p>
+          </li>
+        </ol>
+
+        <h3 class="group__title reveal">Conferences</h3>
+        <ol class="pubs">
+          <li class="pub reveal">
+            <div class="pub__marks"><span class="tag tag--accent">CORE A</span></div>
+            <h4 class="pub__title">BornoDrishti: Leveraging Vision Encoders and Domain-Adaptive Learning for Bangla OCR
+              on Diverse Documents</h4>
+            <p class="pub__authors"><em>Islam, S. M.</em>, Hassan, M., Ovi, M. H., Rabby, A. K. M., &amp; Rahman, F.</p>
+            <p class="pub__venue">19th Conference of the European Chapter of the ACL (EACL), Industry Track · ACL, 2026
+            </p>
+          </li>
+          <li class="pub reveal">
+            <div class="pub__marks"><span class="tag">CORE B</span></div>
+            <h4 class="pub__title">Beyond Characters: Position-Aware Metric and a Lightweight LLM for Low-Resource
+              Bangla Punctuation Restoration</h4>
+            <p class="pub__authors">Hassan, M., <em>Islam, S. M.</em>, Rabby, A. K. M., &amp; Rahman, F.</p>
+            <p class="pub__venue">IEEE International Conference on Big Data (BigData) · IEEE, 2025</p>
+          </li>
+          <li class="pub reveal">
+            <div class="pub__marks"><span class="tag">CORE C</span></div>
+            <h4 class="pub__title">IPBlocks: A Blockchain Ecosystem for Secure IP Registration and Decentralized
+              Marketplace</h4>
+            <p class="pub__authors">Ahmmed, S., <em>Islam, S. M.</em>, Mustakim, S. H., Islam, R., Shanto, S. K., &amp;
+              Islam, S.</p>
+            <p class="pub__venue">TENCON 2025 — IEEE Region 10 Conference · IEEE, 2025</p>
+          </li>
+          <li class="pub reveal">
+            <div class="pub__marks"></div>
+            <h4 class="pub__title">E-MedViTR: Enhanced Vision Transformers with Registers for Biomedical Image
+              Classification</h4>
+            <p class="pub__authors">Ahmmed, S., Rahman, T., <em>Islam, S. M.</em>, Reyad, A. M., Dey, S., &amp; Farid,
+              D. M.</p>
+            <p class="pub__venue">6th International Conference on Electrical Engineering and Information &amp;
+              Communication Technology (ICEEICT) · IEEE, 2024</p>
+          </li>
+        </ol>
+
+        <h3 class="group__title reveal">Workshops</h3>
+        <ol class="pubs">
+          <li class="pub reveal">
+            <div class="pub__marks"><span class="tag tag--accent">CORE A* workshop</span></div>
+            <h4 class="pub__title">Watch, Listen, Understand, Mislead: Tri-modal Adversarial Attacks on Short Videos for
+              Content Appropriateness Evaluation</h4>
+            <p class="pub__authors"><em>Islam, S. M.</em>, Mustakim, S. H., Ahmmed, S., Sayeedi, M. F. A., Khandoker,
+              S., Dhrubo, S. T. A., &amp; Hossain, N.</p>
+            <p class="pub__venue">IEEE/CVF International Conference on Computer Vision (ICCV) Workshops · 2025, pp.
+              2955–2964</p>
+          </li>
+          <li class="pub reveal">
+            <div class="pub__marks"><span class="tag tag--accent">CORE A* workshop</span></div>
+            <h4 class="pub__title">MIMIC: Multimodal Islamophobic Meme Identification and Classification</h4>
+            <p class="pub__authors">Mustakim, S. H., <em>Islam, S. M.</em>, Muna, U. M., Chowdhury, M., Islam, M. J.,
+              Ahmmed, S., Sikder, T., Dhrubo, S. T. A., &amp; Shatabda, S.</p>
+            <p class="pub__venue">3rd Muslims in ML Workshop — NeurIPS · 2024</p>
+          </li>
+        </ol>
+
+        <p class="group__more reveal">
+          <a class="link-arrow"
+            href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=34HpSOsAAAAJ"
+            target="_blank" rel="noopener">
+            View the full list on Google Scholar
+            <svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5l7 7-7 7" /></svg>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ───────────────────────────── Projects ───────────────────────── -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Selected projects</p>
+        <h2 class="section__title reveal">Built end to end.</h2>
+
+        <div class="cards">
+
+          <article class="card reveal">
+            <h3 class="card__title">NurtureAid</h3>
+            <p class="card__desc">
+              A real-time, AI-assisted mobile application that simplifies elder and dependent care through caretakers.
+              I led both backend and frontend as the full-stack engineer.
+            </p>
+            <ul class="tags">
+              <li>React Native</li>
+              <li>Node.js</li>
+              <li>Flask</li>
+              <li>MongoDB</li>
+              <li>Firebase</li>
+              <li>LLaMA-Index</li>
+              <li>PyTorch</li>
+            </ul>
+            <ul class="card__notes">
+              <li>Champion — UIU CSE Project Show, Software Engineering Laboratory</li>
+              <li>Champion — Hult Prize OnCampus, UIU</li>
+              <li>Selected for the Hult Prize Summit, Boston</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/sadia-ahmmed/AgeWell-Frontend" target="_blank"
+              rel="noopener">
+              Repository
+              <svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" /></svg>
+            </a>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="card__title">Haven</h3>
+            <p class="card__desc">
+              A BCI-powered mental-health agent: speech to speech, reading emotion from the signal and answering in
+              kind.
+              I led the backend, frontend and AI work.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>OpenAI</li>
+              <li>Emotiv</li>
+              <li>Firebase</li>
+              <li>Streamlit</li>
+            </ul>
+            <ul class="card__notes">
+              <li>Winner — Harvard HSIL Hackathon, Dhaka Hub</li>
+            </ul>
+            <a class="link-arrow" href="https://github.com/S-M-J-I/Haven-Harvard-Hsil-Hackathon-2025" target="_blank"
+              rel="noopener">
+              Repository
+              <svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" /></svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────── Skills ──────────────────────────── -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Toolkit</p>
+        <h2 class="section__title reveal">What I reach for.</h2>
+
+        <div class="skills">
+          <div class="skills__row reveal">
+            <h3>Programming</h3>
+            <ul class="tags">
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>Solidity</li>
+            </ul>
+          </div>
+          <div class="skills__row reveal">
+            <h3>Machine learning</h3>
+            <ul class="tags">
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>Scikit-Learn</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>NLTK</li>
+              <li>Hugging&nbsp;Face</li>
+            </ul>
+          </div>
+          <div class="skills__row reveal">
+            <h3>Frameworks</h3>
+            <ul class="tags">
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Spring Boot</li>
+              <li>FastAPI</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+          <div class="skills__row reveal">
+            <h3>DevOps</h3>
+            <ul class="tags">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <div class="skills__row reveal">
+            <h3>And</h3>
+            <ul class="tags">
+              <li>Communication</li>
+              <li>Leadership</li>
+              <li>Design thinking</li>
+              <li>Public speaking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────── Awards ──────────────────────────── -->
+    <section class="section section--tint" id="awards">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Achievements</p>
+        <h2 class="section__title reveal">A decent trophy shelf.</h2>
+
+        <ul class="awards">
+          <li class="reveal"><span class="awards__name">Winner — Harvard Health Systems Innovation Lab Hackathon, Dhaka
+              Hub</span><span class="awards__year">2025</span></li>
+          <li class="reveal"><span class="awards__name">Best Performing Engineer — SD12 Project of the Government of
+              Bangladesh, given by Apurba Technologies Ltd.</span><span class="awards__year">2025</span></li>
+          <li class="reveal"><span class="awards__name">Academic Excellence Scholarship, United International
+              University</span><span class="awards__year">2020 — 2024</span></li>
+          <li class="reveal"><span class="awards__name">Champion — Bhashamul: Bengali Regional Text to IPA National NLP
+              Datathon</span><span class="awards__year">2024</span></li>
+          <li class="reveal"><span class="awards__name">Champion — Hult Prize OnCampus Round</span><span
+              class="awards__year">2024</span></li>
+          <li class="reveal"><span class="awards__name">Summit Participant — Hult Prize Summit, Boston, USA</span><span
+              class="awards__year">2024</span></li>
+          <li class="reveal"><span class="awards__name">Gold Award (Champion) — International Blockchain Olympiad
+              (IBCOL)</span><span class="awards__year">2023</span></li>
+          <li class="reveal"><span class="awards__name">Silver Award (1st Runner-Up) — Bangladesh Blockchain Olympiad
+              (BCOLBD)</span><span class="awards__year">2023</span></li>
+          <li class="reveal"><span class="awards__name">1st Runner-Up — Intra-University Deep Learning
+              Sprint</span><span class="awards__year">2023</span></li>
+          <li class="reveal"><span class="awards__name">Finalist — ICT Innovation Grant, for NurtureAid</span><span
+              class="awards__year">2023</span></li>
+          <li class="reveal"><span class="awards__name">Champion — Software Engineering Lab</span><span
+              class="awards__year">2023</span></li>
+          <li class="reveal"><span class="awards__name">Champion — Database Management Systems Lab</span><span
+              class="awards__year">2022</span></li>
+          <li class="reveal"><span class="awards__name">Champion — Advanced Object-Oriented Programming Lab</span><span
+              class="awards__year">2022</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Beyond ───────────────────────────── -->
+    <section class="section" id="beyond">
+      <div class="wrap">
+        <p class="section__eyebrow reveal">Beyond the work</p>
+        <h2 class="section__title reveal">Teaching, speaking, organising.</h2>
+
+        <ul class="beyond">
+          <li class="reveal">
+            <h3>General Secretary, UIU Computer Club</h3>
+            <p>Ran the university&rsquo;s computer club through two academic years.</p>
+            <span class="beyond__year">2022 — 2024</span>
+          </li>
+          <li class="reveal">
+            <h3>Interview — Jamuna TV</h3>
+            <p>On the triumph of IBCOL 2023 and the future of blockchain in Bangladesh.</p>
+            <a class="link-arrow" href="https://youtu.be/VDulQXvCg88?si=9QHOXAi9CxJJ3i88" target="_blank"
+              rel="noopener">Watch<svg class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" /></svg></a>
+          </li>
+          <li class="reveal">
+            <h3>Trainer — Automatic Speech Recognition workshop</h3>
+            <p>Hands-on session with Bengali.AI and the IUT Computer Society.</p>
+            <a class="link-arrow" href="https://shorturl.at/3xNtj" target="_blank" rel="noopener">Details<svg
+                class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" /></svg></a>
+          </li>
+          <li class="reveal">
+            <h3>Trainer — Building a dApp from scratch</h3>
+            <p>Hands-on workshop for the UIU Computer Club.</p>
+            <a class="link-arrow" href="https://shorturl.at/zNAFe" target="_blank" rel="noopener">Details<svg
+                class="btn__chev" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 5l7 7-7 7" /></svg></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────── Contact ──────────────────────────── -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap contact">
+        <p class="section__eyebrow reveal">Contact</p>
+        <h2 class="contact__title reveal">Let&rsquo;s talk.</h2>
+        <p class="contact__lede reveal">
+          Open to research collaborations in hierarchical and multi-modal learning, and to conversations about
+          putting models in front of real users.
+        </p>
+        <a class="contact__mail reveal" href="mailto:jishanlion@gmail.com">jishanlion@gmail.com</a>
+
+        <ul class="social reveal">
+          <li>
+            <a href="https://github.com/S-M-J-I" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/s-m-jishanul-islam-709b0b1a7/" target="_blank" rel="noopener"
+              aria-label="LinkedIn" title="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=34HpSOsAAAAJ"
+              target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <!-- Hugging Face profile — update the href if your handle differs. -->
+            <a class="social__img" href="https://huggingface.co/smji" target="_blank" rel="noopener"
+              aria-label="Hugging Face" title="Hugging Face">
+              <img src="assets/hf-logo.svg" alt="" loading="lazy">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:jishanlion@gmail.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M2.25 5.25h19.5v13.5H2.25V5.25zm1.8 1.5L12 12.6l7.95-5.85H4.05z" /></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> S M Jishanul Islam</p>
+      <p class="footer__links">
+        <a href="assets/cvs/CV_S_M_Jishanul_Islam.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="https://web.cs.dal.ca/~smjislam/" target="_blank" rel="noopener">Dalhousie page</a>
+        <a href="#top">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
